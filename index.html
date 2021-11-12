@@ -31,7 +31,8 @@
 
 <body class="bg-secondary d-flex justify-content-center align-items-center">
     <div id="form" class="border border-2 rounded bg-white col-xs-12 col-md-7">
-        <h1 id="top" class="p-3 bg-light text-dark">Payment from example</h1>
+        <h1 id="top" class="p-3 bg-light text-dark mb-0">Payment form example</h1>
+        <hr class="m-0"></hr>
         <div id="middle">
             <div id="some" class="alert alert-danger m-4">Some fields are missing</div>
             <div id="middle1" class="container d-flex">
@@ -127,23 +128,24 @@
                     <input type="text" id="postalCode" class="form-control">
                 </section>
             </div>
-            <div id="middle4" class="container d-flex justify-content-between align-items-center">
-                <section class="d-flex px-2 col-6">
-                    <div>We accept:</div>
-                    <section class="bg-secondary d-flex">
-                        <section class="d-flex flex-row align-items-center">
+
+            <div id="middle4" class="container d-flex justify-content-between align-items-center pl-5">
+                <section class="px-2 col-6">
+                    <p>We accept:</p>
+                    <section class="d-flex">
+                        <section class="d-flex flex-row align-items-center bg-secondary rounded-start px-3">
                             <input type="radio" id="credit">
                             <label for="credit"><i class="fab fa-cc-visa"></i></label>
                         </section>
-                        <section class="d-flex flex-row align-items-center">
+                        <section class="d-flex flex-row align-items-center bg-secondary p-2 px-3">
                             <input type="radio" id="credit">
                             <label for="credit"><i class="fab fa-cc-mastercard"></i></label>
                         </section>
-                        <section class="d-flex flex-row align-items-center">
+                        <section class="d-flex flex-row align-items-center bg-secondary p-2 px-3">
                             <input type="radio" id="credit">
                             <label for="credit"><i class="fab fa-cc-amex"></i></label>
                         </section>
-                        <section class="d-flex flex-row align-items-center">
+                        <section class="d-flex flex-row align-items-center bg-secondary p-2 rounded-end px-3">
                             <input type="radio" id="credit">
                             <label for="credit"><i class="fab fa-cc-diners-club"></i></i></label>
                         </section>
@@ -152,13 +154,14 @@
                 <section class="col-6 px-2" class="form-control">
                     <label for="exampleFormControlTextarea1">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <div>Add any notes here</div>
+                    <div class="text-secondary">Add any notes here.</div>
                 </section>
             </div>
         </div>
-        <div id="bottom">
-            <button type="button">Cancel</button>
-            <button type="button">Send</button>
+        <hr class="m-0 mt-5"></hr>
+        <div id="bottom" class="p-2 d-flex justify-content-end bg-light">
+            <button type="button" class="m-1 btn btn-secondary fw-bold">Cancel</button>
+            <button type="button" class="m-1 btn btn-primary fw-bold">Send</button>
         </div>
     </div>
 </body>
