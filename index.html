@@ -21,7 +21,7 @@
 
         #amountSection::before {
             content: "$";
-            top: -10px;
+            top: -25px;
             position: relative;
             right: -7px;
             
@@ -29,46 +29,46 @@
     </style>
 </head>
 
-<body class="bg-secondary d-flex justify-content-center align-items-center">
+<body class="d-flex justify-content-center align-items-center">
     <div id="form" class="border border-2 rounded bg-white col-xs-12 col-md-7">
-        <h1 id="top" class="p-3 bg-light text-dark mb-0">Payment form example</h1>
+        <h3 id="top" class="px-4 py-3 bg-light text-dark mb-0 fw-bolder">Payment form example</h3>
         <hr class="m-0"></hr>
         <div id="middle">
             <div id="some" class="alert alert-danger m-4">Some fields are missing</div>
             <div id="middle1" class="container d-flex">
-                <section class="d-flex flex-column col-6 px-2">
-                    <label for="CardN">Card #</label>
-                    <input type="text" id="cardN" placeholder="XXXXXXXXXXXXXXXX" class="form-control">
+                <section class="d-flex flex-column col-5 px-2">
+                    <label for="CardN" class="mb-2">Card #</label>
+                    <input type="text" id="cardN" placeholder="XXXXXXXXXXXXXXXX" class="form-control mb-2">
                 </section>
-                <section class="d-flex flex-column col-2 px-2">
-                    <label for="cvcN">CVC #</label>
-                    <input type="text" id="cvcN" placeholder="0000" class="form-control">
+                <section class="d-flex flex-column col-3 px-2">
+                    <label for="cvcN" class="mb-2">CVC #</label>
+                    <input type="text" id="cvcN" placeholder="0000" class="form-control mb-2">
                 </section>
                 <section id="amountSection" class="d-flex col-4 px-2 align-items-end">
                     <section class="d-flex flex-column col-12 px-2">
-                        <label for="amount">Amount</label>
-                        <input type="text" id="amount" placeholder="Amount" class="form-control">
+                        <label for="amount" class="mb-2">Amount</label>
+                        <input type="text" id="amount" placeholder="Amount" class="form-control mb-2">
                     </section>
                 </section>
             </div>
             <div id="middle2" class="container d-flex">
                 <section class="d-flex flex-column col-6 px-2">
-                    <label for="firstN">First Name</label>
-                    <input type="text" id="firstN" class="form-control">
+                    <label for="firstN" class="mb-2">First Name</label>
+                    <input type="text" id="firstN" class="form-control mb-2">
                 </section>
                 <section class="d-flex flex-column col-6 px-2">
-                    <label for="lastN">Last Name</label>
-                    <input type="text" id="lastN" class="form-control">
+                    <label for="lastN" class="mb-2">Last Name</label>
+                    <input type="text" id="lastN" class="form-control mb-2">
                 </section>
             </div>
             <div id="middle3" class="container d-flex">
                 <section class="d-flex flex-column col-6 px-2">
-                    <label for="city">City</label>
-                    <input type="text" id="city" class="form-control">
+                    <label for="city" class="mb-2">City</label>
+                    <input type="text" id="city" class="form-control mb-2">
                 </section>
                 <section class="d-flex flex-column col-3 px-2">
-                    <label for="state">State</label>
-                    <select class="form-control">
+                    <label for="state" class="mb-2">State</label>
+                    <select class="form-select">
                         <option value="" disabled selected hidden>Pick a state</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -124,36 +124,36 @@
                     </select>
                 </section>
                 <section class="d-flex flex-column col-3 px-2">
-                    <label for="postalCode">Postal Code</label>
-                    <input type="text" id="postalCode" class="form-control">
+                    <label for="postalCode" class="mb-2">Postal Code</label>
+                    <input type="text" id="postalCode" class="form-control mb-2">
                 </section>
             </div>
 
             <div id="middle4" class="container d-flex justify-content-between align-items-center pl-5">
-                <section class="px-2 col-6">
+                <section class="px-2 col-6 pb-5">
                     <p>We accept:</p>
                     <section class="d-flex">
-                        <section class="d-flex flex-row align-items-center bg-secondary rounded-start px-3">
-                            <input type="radio" id="credit">
+                        <section class="d-flex flex-row align-items-center bg-secondary rounded-start px-2">
+                            <input type="radio" id="credit" class="mx-1">
                             <label for="credit"><i class="fab fa-cc-visa"></i></label>
                         </section>
-                        <section class="d-flex flex-row align-items-center bg-secondary p-2 px-3">
-                            <input type="radio" id="credit">
+                        <section class="d-flex flex-row align-items-center bg-secondary p-2 px-2">
+                            <input type="radio" id="credit" class="mx-1">
                             <label for="credit"><i class="fab fa-cc-mastercard"></i></label>
                         </section>
-                        <section class="d-flex flex-row align-items-center bg-secondary p-2 px-3">
-                            <input type="radio" id="credit">
+                        <section class="d-flex flex-row align-items-center bg-secondary p-2 px-2">
+                            <input type="radio" id="credit" class="mx-1">
                             <label for="credit"><i class="fab fa-cc-amex"></i></label>
                         </section>
-                        <section class="d-flex flex-row align-items-center bg-secondary p-2 rounded-end px-3">
-                            <input type="radio" id="credit">
+                        <section class="d-flex flex-row align-items-center bg-secondary p-2 rounded-end px-2">
+                            <input type="radio" id="credit" class="mx-1">
                             <label for="credit"><i class="fab fa-cc-diners-club"></i></i></label>
                         </section>
                     </section>
                 </section>
                 <section class="col-6 px-2" class="form-control">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1" class="mb-2">Message</label>
+                    <textarea class="form-control mb-1" id="exampleFormControlTextarea1" rows="3"></textarea>
                     <div class="text-secondary">Add any notes here.</div>
                 </section>
             </div>
